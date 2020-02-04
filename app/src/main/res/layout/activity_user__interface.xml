@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Interface">
+
+    <TextView
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:text="Control LED"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/idEncender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="146dp"
+        android:text="Expulsar Aspirina" />
+
+    <Button
+        android:id="@+id/idapagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="285dp"
+        android:text="Expulsar Fem" />
+
+    <TextView
+        android:id="@+id/idBuffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="340dp"
+        android:text="Dato:" />
+
+    <Button
+        android:id="@+id/idDesconectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="133dp"
+        android:text="Desconectar" />
+</RelativeLayout>

@@ -21,7 +21,7 @@ import java.util.UUID;
 
 public class User_Interface extends AppCompatActivity {
 
-    Button IdEncender, IdApagar,IdDesconectar;
+    Button Idexpulsar1, Idexpulsar2,Idexpulsar3,Idexpulsar4,IdDesconectar;
     TextView IdBufferIn;
     Handler bluetoothIn;
     final int handlerState = 0;
@@ -38,10 +38,12 @@ public class User_Interface extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user__interface);
 
-        IdEncender = findViewById(R.id.idEncender);
-        IdApagar = findViewById(R.id.idapagar);
-        IdDesconectar = findViewById(R.id.idDesconectar);
-        IdBufferIn = findViewById(R.id.idBuffer);
+        Idexpulsar1 = findViewById(R.id.idexpulsar1);
+        Idexpulsar2 = findViewById(R.id.idexpulsar2);
+        Idexpulsar3 = findViewById(R.id.idexpulsar3);
+        Idexpulsar4 = findViewById(R.id.idexpulsar4);
+       IdDesconectar = findViewById(R.id.idDesconectar);
+       IdBufferIn = findViewById(R.id.idBuffer);
 
 
         bluetoothIn = new Handler() {
@@ -66,16 +68,29 @@ public class User_Interface extends AppCompatActivity {
         // Configuracion onClick listeners para los botones
         // para indicar que se realizara cuando se detecte
         // el evento de Click
-        IdEncender.setOnClickListener(new View.OnClickListener() {
+        Idexpulsar1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
                 MyConexionBT.write("1");
             }
         });
 
-        IdApagar.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                MyConexionBT.write("0");
+        Idexpulsar2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                MyConexionBT.write("2");
+            }
+        });
+        Idexpulsar3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                MyConexionBT.write("3");
+            }
+        });
+        Idexpulsar4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v)
+            {
+                MyConexionBT.write("4");
             }
         });
 
